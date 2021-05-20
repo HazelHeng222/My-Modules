@@ -27,20 +27,22 @@ public class ModuleDetailsActivity extends AppCompatActivity {
         String modCode = intentReceived.getStringExtra("modCode");
         String details = "";
 
-        if (modCode.equals("C218")) {
+        if (!modCode.equals(null)){
+            if (modCode.equals("C218")) {
              details += "Module Code: C218\n" + "Module Name: UI/UX Design\n"
                     + "Academic Year: 2021" + "\nSemester: 1\n "
                     + "Module Credit: 4\n" + "Venue: W64G";
         }
-        if (modCode.equals("C346")) {
+            else if (modCode.equals("C346")) {
              details += "Module Code: C346\n" + "Module Name: Mobile App Development\n"
                     + "Academic Year: 2021" + "\nSemester: 1\n "
                     + "Module Credit: 4\n" + "Venue: E62E";
         }
-        if (modCode.equals("C203")) {
+            else if (modCode.equals("C203")) {
              details += "Module Code: C203\n" + "Module Name: Web App Development in php\n"
                     + "Academic Year: 2021" + "\nSemester: 1\n "
                     + "Module Credit: 4\n" + "Venue: W67M";
+        }
         }
 
         modDetails.setText(details);
