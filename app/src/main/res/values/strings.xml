@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Modules</string>
+    <string name="modTitle1">C218 UI/UX Design</string>
+    <string name="modTitle2">C346 Mobile App Development</string>
+    <string name="modTitle3">C206 Web App Development in php</string>
+    <string name="butBack">Back to My Modules</string>
+
+
+</resources>
